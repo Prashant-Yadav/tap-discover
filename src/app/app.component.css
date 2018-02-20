@@ -1,0 +1,37 @@
+/*Default styles*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: .82em;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+#wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+#container {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
