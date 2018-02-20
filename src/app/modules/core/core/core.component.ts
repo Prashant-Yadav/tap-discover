@@ -37,7 +37,10 @@ export class CoreComponent implements OnInit {
       this.coreService.imageCount = response.count;
       this.coreService.imageUrls.previous = response.previous;
       this.coreService.imageUrls.next = response.next;
-      this.coreService.images = response.results;
+
+      response.results.forEach(image => {
+        this.coreService.images.push(image);
+      });
 
     };
 
@@ -46,6 +49,14 @@ export class CoreComponent implements OnInit {
       error   => console.log(error)
     );
 
+  }
+
+  /**
+   * @desc  On scroll event call this method
+   */
+  onScroll() {
+    console.log('onscroll down');
+    this.getImagesData();
   }
 
 }

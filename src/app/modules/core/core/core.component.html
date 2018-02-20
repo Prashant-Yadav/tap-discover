@@ -1,3 +1,13 @@
-<p>
-  core works!
-</p>
+<ng-container *ngIf="coreService.images">
+
+  <div class="search-results"
+       infiniteScroll
+       (scrolled)="onScroll()">
+
+    <div *ngFor="let image of coreService.images" class="image-box">
+      <img [src]="image.image_link" />
+    </div>
+
+  </div>
+
+</ng-container>

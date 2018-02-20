@@ -16,9 +16,9 @@ export class CoreService {
   get imageUrls() { return CoreService._imageUrls; }
   set imageUrls(url: ImageUrls) { CoreService._imageUrls = url; }
 
-  public static images: Image[];
+  public static images: Image[] = [];
   get images() { return CoreService.images; }
-  set images(images: Image[]) { CoreService.images = CoreService.images; }
+  set images(images: Image[]) { CoreService.images = images; }
 
   constructor(
     private http: HttpClient,

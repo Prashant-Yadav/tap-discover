@@ -1,0 +1,10 @@
+.search-results {
+  height: 100%;
+}
+
+.image-box img {
+  display: block;
+  float: left;
+  width: 15rem;
+  margin: 0.5rem 1rem;
+}
